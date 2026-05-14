@@ -39,6 +39,7 @@
   grid-template-columns:repeat(auto-fit,minmax(11rem,1fr))!important;
 }
 #pricing .max-w-5xl > div > div:nth-child(2) > div.mt-6 > div.grid > div{
+  height:3.5rem;
   min-width:0;
   padding-left:1rem;
   padding-right:1rem;
@@ -46,7 +47,9 @@
 #pricing .max-w-5xl > div > div:nth-child(2) > div.mt-6 > div.grid > div span{
   max-width:100%;
   text-align:center;
-  white-space:normal;
+  white-space:nowrap;
+  font-size:.95rem;
+  line-height:1.25;
 }
 @media(min-width:1024px) and (max-width:1279px){
   #hero h1{

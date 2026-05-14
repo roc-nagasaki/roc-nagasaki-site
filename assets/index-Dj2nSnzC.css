@@ -27,6 +27,31 @@
   font-size:1.05rem;
   line-height:1.25;
 }
+#hero h1,
+#services h3,
+#pricing h2,
+#pricing h3,
+#pricing .max-w-5xl span{
+  word-break:keep-all;
+  overflow-wrap:normal;
+}
+#pricing .max-w-5xl > div > div:nth-child(2) > div.mt-6 > div.grid{
+  grid-template-columns:repeat(auto-fit,minmax(11rem,1fr))!important;
+}
+#pricing .max-w-5xl > div > div:nth-child(2) > div.mt-6 > div.grid > div{
+  min-width:0;
+  padding-left:1rem;
+  padding-right:1rem;
+}
+#pricing .max-w-5xl > div > div:nth-child(2) > div.mt-6 > div.grid > div span{
+  white-space:nowrap;
+}
+@media(min-width:1024px) and (max-width:1279px){
+  #hero h1{
+    font-size:3.25rem!important;
+    line-height:1.16!important;
+  }
+}
 
 @media(max-width:640px){
   html,body{max-width:100%}

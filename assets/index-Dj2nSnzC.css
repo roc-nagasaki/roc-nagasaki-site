@@ -44,7 +44,9 @@
   padding-right:1rem;
 }
 #pricing .max-w-5xl > div > div:nth-child(2) > div.mt-6 > div.grid > div span{
-  white-space:nowrap;
+  max-width:100%;
+  text-align:center;
+  white-space:normal;
 }
 @media(min-width:1024px) and (max-width:1279px){
   #hero h1{

@@ -1,0 +1,140 @@
+body.site-locked {
+  overflow: hidden;
+}
+
+body.site-locked #root {
+  display: none;
+}
+
+.auth-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(11, 31, 84, 0.95), rgba(37, 99, 235, 0.9)),
+    #102a77;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.auth-card {
+  width: min(100%, 420px);
+  padding: 34px 30px 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.32);
+  text-align: center;
+}
+
+.auth-logo {
+  width: 188px;
+  height: auto;
+  margin: 0 auto 24px;
+}
+
+.auth-eyebrow {
+  margin: 0 0 8px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.auth-card h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 24px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.auth-copy {
+  margin: 10px 0 24px;
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.auth-form {
+  text-align: left;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-input-row input {
+  min-width: 0;
+  flex: 1;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.auth-input-row input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.16);
+}
+
+.auth-input-row button {
+  height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #facc15;
+  color: #713f12;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.auth-input-row button:hover {
+  background: #fde047;
+}
+
+.auth-message {
+  min-height: 20px;
+  margin: 10px 0 0;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 420px) {
+  .auth-gate {
+    padding: 16px;
+  }
+
+  .auth-card {
+    padding: 28px 20px 24px;
+  }
+
+  .auth-logo {
+    width: 160px;
+  }
+
+  .auth-input-row {
+    flex-direction: column;
+  }
+
+  .auth-input-row button {
+    width: 100%;
+  }
+}

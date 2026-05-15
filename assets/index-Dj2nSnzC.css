@@ -58,6 +58,10 @@
   }
 }
 
+.roc-mobile-break{
+  display:none;
+}
+
 @media(max-width:1023px){
   #hero > div:first-child{
     min-height:auto;
@@ -86,6 +90,9 @@
   html,body{
     max-width:100%;
     overflow-x:hidden;
+  }
+  .roc-mobile-break{
+    display:block;
   }
   [class*="tracking-"]{letter-spacing:0!important}
   #hero{

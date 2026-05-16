@@ -31,7 +31,7 @@ body.site-locked #root {
 }
 
 .auth-logo {
-  width: 188px;
+  width: 240px;
   height: auto;
   margin: 0 auto 24px;
 }
@@ -127,7 +127,7 @@ body.site-locked #root {
   }
 
   .auth-logo {
-    width: 160px;
+    width: 200px;
   }
 
   .auth-input-row {

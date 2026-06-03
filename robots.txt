@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roc-nagasaki.github.io/roc-nagasaki-site/sitemap.xml
